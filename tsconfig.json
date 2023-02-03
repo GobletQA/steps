@@ -1,0 +1,62 @@
+{
+
+  "compilerOptions": {
+    "baseUrl": "./",
+    "outDir": "./dist",
+    
+    "target": "esnext",
+    "module": "esnext",
+    "noEmit": false,
+    "allowJs": true,
+    "sourceMap": true,
+    "declaration": true,
+    "skipLibCheck": true,
+    "noEmitOnError": true,
+    "noImplicitAny": false,
+    "declarationMap": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "moduleResolution": "node",
+    "noFallthroughCasesInSwitch": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "typeRoots": [
+      "src/types",
+      "node_modules/@types",
+    ],
+    "paths": {
+      "@GTU/Constants": ["src/constants"],
+      "@GTU/Constants/*": ["src/constants/*"],
+      "@GTU/Jest": ["src/jest"],
+      "@GTU/Jest/*": ["src/jest/*"],
+      "@GTU/Utils": ["src/utils"],
+      "@GTU/Utils/*": ["src/utils/*"],
+      "@GTU/Steps": ["src/steps"],
+      "@GTU/Steps/*": ["src/steps/*"],
+      "@GTU/Parkin": ["mocks/index.ts"],
+      "@GTU/Parkin/*": ["mocks/index.ts"],
+      "@GTU/Support": ["src/support"],
+      "@GTU/Support/*": ["src/support/*"],
+      "@GTU/Reports": ["src/reports"],
+      "@GTU/Reports/*": ["src/reports/*"],
+      "@GTU/PlaywrightEnv": ["src/playwright/playwrightTestEnv"],
+      "@GTU/Playwright": ["mocks/index.ts"],
+      "@GTU/Playwright/*": ["mocks/index.ts"],
+      "@GTU/TestMeta": ["src/testMeta"],
+      "@GTU/TestMeta/*": ["src/testMeta/testMeta"],
+      "@GTU/Types": ["src/types"],
+      "@GTU/Types/*": ["src/types/*"],
+      "@GTU": ["mocks/index.ts"],
+
+      "@GEnv": ["../shared/src/environment/environment"],
+      "@GEnv/secrets": ["../shared/src/environment/secrets"],
+      "@GEnv/values": ["../shared/src/environment/values"],
+      "@GEnvironment": ["../shared/src/environment/environment"],
+      "@GEnvironment/secrets": ["../shared/src/environment/secrets"],
+      "@GEnvironment/values": ["../shared/src/environment/values"]
+    }
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"]
+}
+

@@ -1,0 +1,10 @@
+{
+  "name": "steps",
+  "version": "0.0.0",
+  "description": "Step Definitions for GobletQA and Parkin",
+  "main": "index.js",
+  "repository": "https://github.com/GobletQA/steps",
+  "author": "Lance Tipton <lancetipton04@gmail.com>",
+  "license": "MIT",
+  "private": false
+}
